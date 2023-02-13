@@ -425,3 +425,25 @@ C++
 Go
 julien@ubuntu:/tmp/0x02$ 
 ```
+
+## 14. It must be in that file
+
+Display lines containing the pattern “root” from the file /etc/passwd
+
+```bash
+$ ./14-findthatword
+root:*:0:0:System Administrator:/var/root:/bin/sh
+daemon:*:1:1:System Services:/var/root:/usr/bin/false
+_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
+$
+```
+
+## 15. Count that word
+
+Display the number of lines that contain the pattern “bin” in the file /etc/passwd
+
+```bash
+$ ./15-countthatword
+81
+$ 
+```
