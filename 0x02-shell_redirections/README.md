@@ -14,11 +14,24 @@ julien@ubuntu:/tmp/h$
 
 ## 1. Confused smiley
 
-mandatory
 Write a script that displays a confused smiley "(Ôo)'.
 
 ```bash
 julien@ubuntu:/tmp/h$ ./1-confused_smiley 
 \"(Ôo)\'
 julien@ubuntu:/tmp/h$ 
+```
+
+## 2. Let's display a file
+
+Display the content of the /etc/passwd file.
+
+Example:
+
+```bash
+$ ./2-hellofile
+##
+# User Database
+#
+...
 ```
