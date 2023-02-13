@@ -1,5 +1,17 @@
 # 0x02-shell_redirections
 
+## Requirements
+
+Allowed editors: vi, vim, emacs
+All your scripts will be tested on Ubuntu 20.04 LTS
+All your scripts should be exactly two lines long ($ wc -l file should print 2)
+All your files should end with a new line (why?)
+The first line of all your files should be exactly #!/bin/bash
+A README.md file, at the root of the folder of the project, describing what each script is doing
+You are not allowed to use backticks, &&, || or ;
+All your files must be executable
+You are not allowed to use sed or awk
+
 ## 0. Hello World
 
 Write a script that prints “Hello, World”, followed by a new line to the standard output.
@@ -446,4 +458,23 @@ Display the number of lines that contain the pattern “bin” in the file /etc/
 $ ./15-countthatword
 81
 $ 
+```
+
+## 16. What's next?
+
+Display lines containing the pattern “root” and 3 lines after them in the file /etc/passwd.
+
+```bash
+$ ./16-whatsnext
+root:*:0:0:System Administrator:/var/root:/bin/sh
+daemon:*:1:1:System Services:/var/root:/usr/bin/false
+_uucp:*:4:4:Unix to Unix Copy Protocol:/var/spool/uucp:/usr/sbin/uucico
+_taskgated:*:13:13:Task Gate Daemon:/var/empty:/usr/bin/false
+_networkd:*:24:24:Network Services:/var/networkd:/usr/bin/false
+--
+_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
+_usbmuxd:*:213:213:iPhone OS Device Helper:/var/db/lockdown:/usr/bin/false
+_dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false
+_dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false
+$
 ```
