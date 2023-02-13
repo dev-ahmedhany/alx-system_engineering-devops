@@ -523,3 +523,13 @@ julien@ubuntu:/tmp/0x02$ echo 'Replace all characters `A` and `c` from input to 
 Replaee all eharaeters `Z` and `e` from input to `Z` and `e`.
 julien@ubuntu:/tmp/0x02$ 
 ```
+
+## 20. Without C, you would live in hiago
+
+Create a script that removes all letters c and C from input.
+
+```bash
+julien@ubuntu:/tmp/0x02$ echo Chicago | ./20-hiago 
+hiago
+julien@ubuntu:/tmp/0x02$ 
+```
