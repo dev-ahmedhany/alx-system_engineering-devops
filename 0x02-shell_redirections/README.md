@@ -533,3 +533,13 @@ julien@ubuntu:/tmp/0x02$ echo Chicago | ./20-hiago
 hiago
 julien@ubuntu:/tmp/0x02$ 
 ```
+
+## 21. esreveR
+
+Write a script that reverse its input.
+
+```bash
+julien@ubuntu:/tmp/0x02$ echo "Reverse" | ./21-reverse 
+esreveR
+julien@ubuntu:/tmp/0x02$ 
+```
