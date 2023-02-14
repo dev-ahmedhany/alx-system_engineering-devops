@@ -165,3 +165,9 @@ julien@ubuntu:/tmp/0x03$
 ```bash
 env
 ```
+
+or
+
+```bash
+printenv
+```
