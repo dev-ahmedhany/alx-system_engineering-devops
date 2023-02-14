@@ -45,8 +45,20 @@ julien@ubuntu:/tmp/0x03$
 echo "hello $USER"
 ```
 
-or
+> wrong answers :
 
 ```bash
 echo "hello $(whoami)"
+```
+
+```bash
+[Got]
+hello root
+
+(11 chars long)
+
+[Expected]
+hello MyUser
+
+(13 chars long)
 ```
