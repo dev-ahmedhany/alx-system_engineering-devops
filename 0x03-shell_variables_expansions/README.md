@@ -222,3 +222,14 @@ Create a script that creates a new global variable.
 Name: BEST
 Value: School
 ```
+
+## 8. Every addition to true knowledge is an addition to human power
+
+Write a script that prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE, followed by a new line.
+
+```bash
+julien@production-503e7013:~$ export TRUEKNOWLEDGE=1209
+julien@production-503e7013:~$ ./8-true_knowledge | cat -e
+1337$
+julien@production-503e7013:~$
+```
