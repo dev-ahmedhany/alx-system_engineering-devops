@@ -325,3 +325,105 @@ ubuntu@ip-172-31-63-244:~/0x03$ ./13-print_float
 3.14
 ubuntu@ip-172-31-63-244:~/0x03$
 ```
+
+## 14. Decimal to Hexadecimal
+
+Write a script that converts a number from base 10 to base 16.
+
+The number in base 10 is stored in the environment variable DECIMAL
+The script should display the number in base 16, followed by a new line
+
+```bash
+julien@production-503e7013:~/$ export DECIMAL=16
+julien@production-503e7013:~/$ ./100-decimal_to_hexadecimal
+10
+julien@production-503e7013:~/$ export DECIMAL=1337
+julien@production-503e7013:~/$ ./100-decimal_to_hexadecimal | cat -e
+539$
+julien@production-503e7013:~/$ export DECIMAL=15
+julien@production-503e7013:~/$ ./100-decimal_to_hexadecimal | cat -e
+f$
+julien@production-503e7013:~/$
+```
+
+## 15. Everyone is a proponent of strong encryption
+
+Write a script that encodes and decodes text using the rot13 encryption. Assume ASCII.
+
+```bash
+julien@production-503e7013:~/shell/fun_with_the_shell$ cat quote
+"Everyone is a proponent of strong encryption."
+- Dorothy E. Denning
+julien@production-503e7013:~/shell/fun_with_the_shell$ ./101-rot13 < quote
+"Rirelbar vf n cebcbarag bs fgebat rapelcgvba."
+- Qbebgul R. Qraavat
+julien@production-503e7013:~/shell/fun_with_the_shell$
+```
+
+## 16. The eggs of the brood need to be an odd number
+
+Write a script that prints every other line from the input, starting with the first line.
+
+```bash
+ubuntu@ip-172-31-63-244:/$ \ls -1
+bin
+boot
+dev
+etc
+home
+initrd.img
+lib
+lib32
+lib64
+libx32
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+t
+#t#
+t~
+tmp
+usr
+var
+vmlinuz
+whoareyou
+ubuntu@ip-172-31-63-244:/$ \ls -1 | ./102-odd
+bin
+dev
+home
+lib
+lib64
+lost+found
+mnt
+proc
+run
+srv
+t
+t~
+usr
+vmlinuz
+ubuntu@ip-172-31-63-244:/$
+```
+   
+## 17. I'm an instant star. Just add water and stir.
+
+Write a shell script that adds the two numbers stored in the environment variables WATER and STIR and prints the result.
+
+WATER is in base water
+STIR is in base stir.
+The result should be in base bestchol
+
+```bash
+julien@production-503e7013:~$ export WATER="ewwatratewa"
+julien@production-503e7013:~$ export STIR="ti.itirtrtr"
+julien@production-503e7013:~$ ./103-water_and_stir
+shtbeolhc
+julien@production-503e7013:~$
+```
