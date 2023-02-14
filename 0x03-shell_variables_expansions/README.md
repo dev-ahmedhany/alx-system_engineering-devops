@@ -204,3 +204,12 @@ julien@ubuntu:/tmp/0x03$
 > answer
 
 Local variables are only available in the current shell. Using the set built-in command without any options will display a list of all variables (including environment variables) and functions. The output will be sorted according to the current locale and displayed in a reusable format.
+
+## 6. Local variable
+
+Create a script that creates a new local variable.
+
+```bash
+Name: BEST
+Value: School
+```
