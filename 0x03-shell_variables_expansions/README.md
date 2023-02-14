@@ -109,10 +109,10 @@ julien@ubuntu:/tmp/0x03$
 echo $((`echo $PATH | grep -o ":/" | wc -l`+ 1))
 ```
 
-> wrong answers :
+> or
 
 ```bash
-echo $PATH | tr ':' '\n' | wc -l
+echo $PATH | tr -s ':' '\n' | wc -l
 ```
 
 ## 4. Global variables
