@@ -87,3 +87,30 @@ export PATH="$PATH:/action"
 ```bash
 export PATH='$PATH:/action'
 ```
+
+## 3. If the path be beautiful, let us not ask where it leads
+
+Create a script that counts the number of directories in the PATH.
+
+```bash
+julien@ubuntu:/tmp/0x03$ echo $PATH
+/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+julien@ubuntu:/tmp/0x03$ . ./3-paths 
+11
+julien@ubuntu:/tmp/0x03$ PATH=/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:::::/hello
+julien@ubuntu:/tmp/0x03$ . ./3-paths 
+12
+julien@ubuntu:/tmp/0x03$ 
+```
+
+> answer
+
+```bash
+echo $((`echo $PATH | grep -o ":/" | wc -l`+ 1))
+```
+
+> wrong answers :
+
+```bash
+echo $PATH | tr ':' '\n' | wc -l
+```
